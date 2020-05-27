@@ -1,0 +1,175 @@
+
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: century gothic;
+    scroll-behavior: smooth;
+}
+
+
+/* ------------global classes------------ */
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* -------xxxxxx-----global classes------xxxxxxx------ */
+
+/* ------------------navber------------------ */
+
+.nav{
+    background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.4)),url(photos/Header10.png);
+    /* background-size: initial;
+    background-position: center;
+    background-repeat: no-repeat; */
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 1rem;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    transition: height 1s ease-in-out;
+}
+
+nav .nav-brand a{
+   
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    display: block;
+}
+.nav .nav-menu{
+    justify-content: space-between;
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icon{
+    display: flex;
+    justify-content: flex-end;
+    padding:1.7rem  0;
+}
+.nav .toggle-collapse .toggle-icon i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+.collapse{
+    height: 30rem;
+}
+.nav .nav-items{
+    
+    display: flex;
+    margin: 0px;
+}
+.nav .nav-items .nav-link{
+    padding: 1rem 1rem;
+    font-size: 2px;
+    position: relative;
+    
+}
+.nav .social{
+    padding: 1.4rem;  
+}
+.nav .social i{
+    padding: 0.5rem;
+}
+.nav .social i:hover{
+    color:  rgb(180, 126, 252);;
+}
+/* .logo img{
+    max width: 100%;
+    max height: 100%;
+    display: block;
+    margin-top: 0px;
+    
+} */
+
+
+/* ----xxxxxx-----navber------xxxxxxxx----- */
+
+
+
+/* --------------copy--------------- */
+ul{
+    
+    
+    
+    padding: 0px;
+}
+ul li a{
+    
+    color: #000;
+    padding:  45px 10px;
+    border: 1px solid  transparent;
+    transition: 0.3s ease;
+    font-family: Trebuchet MS;
+    font-size: 15px;
+    border-radius: 50px;
+}
+ul li a:hover{
+    background-color: rgb(63, 202, 230);
+    color: #fff;
+    
+}
+
+/* ---------------box--------------- */
+/* .pera{
+    font-size: 18px;
+    background-color:#fff;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: slategray;
+    padding: 30px 0px;
+    transition: 0.3s ease;
+    font-family: Comic Sans MS;
+    border-radius: 20px;
+}
+.pera:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(49, 49, 49);
+} */
+/* ------------Viewport less then or equal to 750px--------- */
+@media only screen and (max-width:750px){
+    .nav .nav-menu, .nav .nav-items{
+       flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+}
+
+
+
+
+
+
+
+
+/* -------xx-----Viewport less then or equal to 750px-----xx---- */
+
+
+
+
+
+
+
+
+
+
+
+
+
